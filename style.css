@@ -1,8 +1,8 @@
 :root {
-    --primary-pink: #ffb7c5;  
-    --neon-pink: #ff2d55;      
-    --bg-dark: #050505;        
-    --glass: rgba(255, 183, 197, 0.05);
+    --primary-pink: #ffb7c5;    /* Soft Pink */
+    --neon-pink: #ff2d55;       /* Neon Accent */
+    --bg-dark: #050505;         /* Deep Black */
+    --glass: rgba(255, 183, 197, 0.05); /* Transparent Pink Glass */
 }
 
 * {
@@ -17,10 +17,60 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    /* Grid Background Effect */
     background-image: 
         linear-gradient(var(--glass) 1px, transparent 1px),
         linear-gradient(90deg, var(--glass) 1px, transparent 1px);
     background-size: 40px 40px;
+}
+
+#loader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease;
+}
+
+.loader-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-top: 2px solid var(--primary-pink);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+.loader-text {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-pink);
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    animation: blink 0.8s infinite;
+    text-align: center;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.hidden {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .scan-line {
@@ -28,13 +78,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 10px;
     background: linear-gradient(
         rgba(255, 183, 197, 0) 0%,
         rgba(255, 183, 197, 0.1) 50%,
         rgba(255, 183, 197, 0) 100%
     );
-    height: 10px;
     z-index: 10;
     pointer-events: none;
     animation: scan 6s linear infinite;
