@@ -1,8 +1,7 @@
-/* 변수 설정 */
 :root {
-    --primary-pink: #ffb7c5;    /* 연분홍 */
-    --neon-pink: #ff2d55;       /* 강조 핑크 */
-    --bg-dark: #050505;         /* 깊은 검정 */
+    --primary-pink: #ffb7c5;  
+    --neon-pink: #ff2d55;      
+    --bg-dark: #050505;        
     --glass: rgba(255, 183, 197, 0.05);
 }
 
