@@ -1,3 +1,9 @@
+/* Force to start from the top of the page*/
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 /**
  * Unified System Initialization and Sequential Animation Controller
  */
