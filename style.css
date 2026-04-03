@@ -76,6 +76,30 @@ body {
     transform: translateY(0);
 }
 
+/*Button Styles*/
+.glass-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    border: 2px solid var(--neon-pink);
+    background: transparent;
+    color: var(--neon-pink);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.glass-btn:hover {
+    background: var(--neon-pink);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 116, 140, 0.6);
+    transform: translateY(-3px);
+}
+
 /* Background Scan Line Effect */
 .scan-line {
     position: fixed;
