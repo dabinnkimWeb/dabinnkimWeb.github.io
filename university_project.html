@@ -5,94 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Projects | Dabinn Kim</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body class="project-detail-page">
 
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">ACCESSING PROJECTS...</p>
+        </div>
+    </div>
+
     <div class="scan-line"></div>
 
-    <nav style="padding: 20px; position: fixed; z-index: 100;">
-        <a href="index.html" style="color: var(--primary-pink); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">[ BACK TO HOME ]</a>
-    </nav>
+    <div id="main-content" class="hidden">
+        
+        <nav style="padding: 20px; position: absolute; z-index: 100;">
+            <a href="index.html" class="glass-btn" style="margin-top: 0; padding: 10px 20px; font-size: 0.8rem;">
+                &lt; BACK TO HOME
+            </a>
+        </nav>
 
-    <main style="padding-top: 100px;">
-        <header class="glass-card" style="margin-bottom: 50px;">
-            <div class="card-number">WORKS</div>
-            <h2>UNIVERSITY PROJECTS</h2>
-            <p>A collection of architectural designs focusing on futuristic structures and spatial innovation.</p>
-        </header>
-    <section class="glass-card fade-in">
-            <div class="card-number">02</div>
-            <h2>ACTIVITY MAPPING</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-year">2025<br>|<br>2026</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Year 3</h3>
-                        <ul class="timeline-bullets">
-                            <li><span>Project 1:</span> Sustainable Housing Module</li>
-                            <li><span>Project 2:</span> Urban Landscape Redesign</li>
-                        </ul>
+        <main style="padding-top: 100px;">
+            <header class="glass-card fade-in" style="margin-bottom: 50px;">
+                <div class="card-number">WORKS</div>
+                <h2>UNIVERSITY PROJECTS</h2>
+                <p>A collection of architectural designs focusing on futuristic structures and spatial innovation.</p>
+            </header>
+
+            <section class="glass-card fade-in">
+                <div class="card-number">02</div>
+                <h2>ACTIVITY MAPPING</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025<br>|<br>2026</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Year 3</h3>
+                            <ul class="timeline-bullets">
+                                <li><span>Project 1:</span> Sustainable Housing Module</li>
+                                <li><span>Project 2:</span> Urban Landscape Redesign</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024<br>|<br>2025</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Year 2</h3>
+                            <ul class="timeline-bullets">
+                                <li><span>Project 1:</span> Structural Analysis Basics</li>
+                                <li><span>Project 2:</span> Digital Fabrication & 3D Modeling</li>
+                                <li><span>Extra:</span> Joined the Architectural Student Union</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023<br>|<br>2024</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Year 1</h3>
+                            <ul class="timeline-bullets">
+                                <li><span>Course 1:</span> Spatial Awareness & Scale</li>
+                                <li><span>Course 2:</span> Material Studies and Applications</li>
+                                <li><span>Extra:</span> Completed Preliminary Architecture Portfolio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="gallery-container fade-in">
+                <div class="gallery-item">
+                    <img src="your-image1.jpg" alt="Project 01">
+                    <div class="img-overlay">
+                        <span>PROJECT 01: CONCEPTUAL DESIGN</span>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year">2024<br>|<br>2025</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Year 2</h3>
-                        <ul class="timeline-bullets">
-                            <li><span>Project 1:</span> Structural Analysis Basics</li>
-                            <li><span>Project 2:</span> Digital Fabrication & 3D Modeling</li>
-                            <li><span>Extra:</span> Joined the Architectural Student Union</li>
-                        </ul>
+                <div class="gallery-item">
+                    <img src="your-image2.jpg" alt="Project 02">
+                    <div class="img-overlay">
+                        <span>PROJECT 02: BIM MODELING</span>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year">2023<br>|<br>2024</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Year 1</h3>
-                        <ul class="timeline-bullets">
-                            <li><span>Course 1:</span> Spatial Awareness & Scale</li>
-                            <li><span>Course 2:</span> Material Studies and Applications</li>
-                            <li><span>Extra:</span> Completed Preliminary Architecture Portfolio</li>
-                        </ul>
+                <div class="gallery-item">
+                    <img src="your-image3.jpg" alt="Project 03">
+                    <div class="img-overlay">
+                        <span>PROJECT 03: URBAN PLANNING</span>
                     </div>
                 </div>
+            </section>
+        </main>
 
-            </div>
-        </section>
+        <footer>
+            <p>© 2026 DABINN KIM PORTFOLIO</p>
+        </footer>
+    </div>
 
-        <section class="gallery-container">
-            <div class="gallery-item">
-                <img src="your-image1.jpg" alt="Project 01">
-                <div class="img-overlay">
-                    <span>PROJECT 01: CONCEPTUAL DESIGN</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="your-image2.jpg" alt="Project 02">
-                <div class="img-overlay">
-                    <span>PROJECT 02: BIM MODELING</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="your-image3.jpg" alt="Project 03">
-                <div class="img-overlay">
-                    <span>PROJECT 03: URBAN PLANNING</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 DABINN KIM PORTFOLIO</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
