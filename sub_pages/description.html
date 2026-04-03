@@ -5,29 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Projects | Dabinn Kim</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body class="project-detail-page">
 
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">ACCESSING ARCHIVE...</p>
+        </div>
+    </div>
+
     <div class="scan-line"></div>
 
-    <nav style="padding: 20px; position: fixed; z-index: 100;">
-        <a href="index.html" style="color: var(--primary-pink); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">[ BACK TO HOME ]</a>
-    </nav>
+    <div id="main-content" class="hidden">
+        
+        <nav style="padding: 40px 50px; position: absolute; top: 0; left: 0; z-index: 100;">
+            <a href="index.html" class="glass-btn" style="margin-top: 0; padding: 10px 20px; font-size: 0.8rem;">
+                &lt; BACK TO HOME
+            </a>
+        </nav>
 
-    <main style="padding-top: 100px;">
-        <header class="glass-card fade-in">
-            <div class="card-number">Hi, I'm Dabinn Kim.</div>
-            <h2>UNIVERSITY PROJECTS</h2>
-            <p>I’m an architecture student at the University of Sheffield, passionate about designing spaces that carry purpose, empathy, and a deep respect for both people and planet. I'm driven by the belief that good design holds the quiet power to tell stories, foster belonging, challenge injustices, and spark emotional connection — all while responding to the urgent environmental and social challenges of our time.
-                Beyond the studio, I’m constantly seeking growth through real-world projects, internships, and expanding my skills in architectural software, graphic design, and research. I’ve been nominated for the Women in Property Student Awards 2025, awarded the Socially Engaged Digital Design Scholarship, and recently completed an internship designing a hub for the Sheffield Social Enterprise Network.
-                As an Inclusions and Wellbeing Officer for the Sheffield University Architecture Society, I’m committed to fostering a supportive, inclusive community. I’m always eager to push boundaries, collaborate, and use design as a tool for meaningful, sustainable change.
-                Let’s connect — I’m always up for creative conversations, fresh ideas, and exciting collaborations!</p>
-        </header>
-    </main>
+        <main style="padding-top: 100px;">
+            <section class="glass-card fade-in">
+                <div class="card-number">ABOUT ME</div>
+                <h2>Hi, I'm Dabinn Kim.</h2>
+                
+                <p>I’m an architecture student at the University of Sheffield, passionate about designing spaces that carry purpose, empathy, and a deep respect for both people and planet. I'm driven by the belief that good design holds the quiet power to tell stories, foster belonging, challenge injustices, and spark emotional connection — all while responding to the urgent environmental and social challenges of our time.</p>
+                
+                <p style="margin-top: 15px;">Beyond the studio, I’m constantly seeking growth through real-world projects, internships, and expanding my skills in architectural software, graphic design, and research. I’ve been nominated for the Women in Property Student Awards 2025, awarded the Socially Engaged Digital Design Scholarship, and recently completed an internship designing a hub for the Sheffield Social Enterprise Network.</p>
+                
+                <p style="margin-top: 15px;">As an Inclusions and Wellbeing Officer for the Sheffield University Architecture Society, I’m committed to fostering a supportive, inclusive community. I’m always eager to push boundaries, collaborate, and use design as a tool for meaningful, sustainable change.</p>
+                
+                <a href="mailto:your.email@example.com" class="glass-btn">LET'S CONNECT</a>
+            </section>
 
-    <footer>
-        <p>© 2026 DABINN KIM PORTFOLIO</p>
-    </footer>
+            <section class="glass-card fade-in">
+                <div class="card-number">ARCHIVE</div>
+                <h2>UNIVERSITY PROJECTS</h2>
+                <div class="project-grid">
+                    <a href="#" class="project-item">
+                        <div class="item-content">Year 2: Sustainable Hub</div>
+                    </a>
+                    <a href="#" class="project-item">
+                        <div class="item-content">Year 1: Housing Module</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 DABINN KIM PORTFOLIO</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
