@@ -1,6 +1,4 @@
-/* =========================================
-   Global Variables & Light Theme Setup
-   ========================================= */
+/*Global Variables & Light Theme Setup*/
 :root {
     --primary-pink: #ffb7c5;    /* Soft Pink */
     --primary-blue: #d4eaf7;    /* Soft Pastel Blue */
@@ -31,9 +29,7 @@ body {
     background-size: 40px 40px;
 }
 
-/* =========================================
-   Loader Section
-   ========================================= */
+/*Loader Section*/
 #loader {
     position: fixed;
     top: 0; left: 0;
@@ -66,9 +62,7 @@ body {
     text-align: center;
 }
 
-/* =========================================
-   Global Utilities & Background Animations
-   ========================================= */
+/*Global Utilities & Background Animations*/
 .hidden { opacity: 0; }
 
 .fade-in {
@@ -106,9 +100,7 @@ body {
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
-/* =========================================
-   Header & Hero Image Animation
-   ========================================= */
+/*Header & Hero Image Animation*/
 header {
     height: 100vh;
     display: flex;
@@ -200,9 +192,7 @@ header {
     transition-delay: 1.2s; /* Line fades out after color restores */
 }
 
-/* =========================================
-   Main Content & Glass Cards
-   ========================================= */
+/*Main Content & Glass Cards*/
 .glass-card {
     max-width: 1000px;
     margin: 100px auto;
@@ -236,9 +226,7 @@ h2 {
     color: var(--neon-pink);
 }
 
-/* =========================================
-   Timeline Section
-   ========================================= */
+/*Timeline Section*/
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -300,9 +288,7 @@ h2 {
     color: rgba(44, 62, 80, 0.7);
 }
 
-/* =========================================
-   Project Grid Section
-   ========================================= */
+/*Project Grid Section*/
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -343,9 +329,7 @@ a.project-item {
 .project-item:hover::before { top: 0; }
 .project-item:hover .item-content { color: white; }
 
-/* =========================================
-   Footer
-   ========================================= */
+/*Footer*/
 footer {
     text-align: center;
     padding: 100px 0 50px;
